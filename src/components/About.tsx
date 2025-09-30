@@ -76,16 +76,25 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center mt-16"
           >
-            <div className="bg-white rounded-xl p-8 shadow-sm">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Klaar om te groeien?
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Laten we samen kijken hoe we jouw bedrijf kunnen helpen met digitale groei.
-              </p>
-              <a href="/contact" className="btn-primary">
-                Neem contact op
-              </a>
+            <div className="bg-white rounded-xl p-8 shadow-sm relative overflow-hidden">
+              {/* Background effects */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-50/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute top-4 right-4 w-16 h-16 bg-primary-100 rounded-full opacity-20"></div>
+              <div className="absolute bottom-4 left-4 w-12 h-12 bg-primary-200 rounded-full opacity-30"></div>
+              
+              <div className="relative z-10">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+                  Klaar om te groeien?
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Laten we samen kijken hoe we jouw bedrijf kunnen helpen met digitale groei.
+                </p>
+                <a href="/contact" className="btn-primary relative group">
+                  <span className="relative z-10">Neem contact op</span>
+                  {/* Button glow effect */}
+                  <div className="absolute inset-0 bg-primary-600 rounded-lg opacity-0 group-hover:opacity-20 blur-lg transition-opacity duration-300"></div>
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>

@@ -96,9 +96,39 @@ const ContactForm = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-gray-50 rounded-xl p-8"
+            className="bg-gray-50 rounded-xl p-8 relative overflow-hidden"
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Background effects */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-primary-100 rounded-full opacity-20 -translate-y-16 translate-x-16"></div>
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary-200 rounded-full opacity-30 translate-y-12 -translate-x-12"></div>
+            
+            {/* Floating elements */}
+            <motion.div
+              className="absolute top-8 right-8 w-4 h-4 bg-primary-400 rounded-full opacity-40"
+              animate={{
+                scale: [1, 1.3, 1],
+                opacity: [0.4, 0.7, 0.4],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            />
+            <motion.div
+              className="absolute bottom-8 left-8 w-3 h-3 bg-green-400 rounded-full opacity-50"
+              animate={{
+                scale: [1, 1.5, 1],
+                opacity: [0.5, 0.8, 0.5],
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1
+              }}
+            />
+            <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">

@@ -38,12 +38,7 @@ const Header = () => {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-gray-900">
-            Websites & Tools
-          </Link>
-
+        <div className="flex items-center justify-center h-16 md:h-20">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
@@ -63,7 +58,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-primary-500 transition-colors"
+            className="md:hidden absolute right-4 p-2 rounded-md text-gray-700 hover:text-primary-500 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (

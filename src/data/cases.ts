@@ -15,17 +15,17 @@ export interface Case {
 
 export const cases: Case[] = [
   {
-    id: 'ecommerce-platform',
-    title: 'Moderne E-commerce Platform',
-    client: 'Retail Innovatie BV',
-    description: 'Een volledig nieuwe webshop met geavanceerde functionaliteiten en AI-aanbevelingen.',
-    challenge: 'De klant had een verouderde webshop die traag was, niet mobiel-vriendelijk en geen moderne betalingsopties had. De conversie was laag en klanten verlieten de site snel.',
-    solution: 'We hebben een volledig nieuwe webshop gebouwd met Next.js, geïntegreerd met een modern CMS en AI-aanbevelingssysteem. De site is geoptimaliseerd voor snelheid en gebruiksvriendelijkheid.',
-    result: '40% hogere conversie, 60% snellere laadtijden en 25% meer herhaalaankopen door de AI-aanbevelingen.',
-    slug: 'ecommerce-platform',
-    image: '/images/case-ecommerce.jpg',
+    id: 'silty-pleasure',
+    title: 'Silty Pleasure Website',
+    client: 'Silty Pleasure',
+    description: 'Een moderne, elegante website voor een premium lifestyle brand met focus op gebruiksvriendelijkheid en visuele impact.',
+    challenge: 'De klant wilde een website die hun premium brand image weerspiegelt en tegelijkertijd gebruiksvriendelijk is voor hun doelgroep. De site moest zowel informatief als visueel aantrekkelijk zijn.',
+    solution: 'We hebben een volledig responsive website ontwikkeld met moderne design principes, geoptimaliseerde laadtijden en een intuïtieve navigatie. De site combineert elegante typografie met subtiele animaties.',
+    result: 'Verbeterde gebruikerservaring, snellere laadtijden en een professionele online aanwezigheid die het premium brand image versterkt.',
+    slug: 'silty-pleasure',
+    image: '/images/silty-pleasure-thumbnail.jpg',
     category: 'Websites & Webshops',
-    technologies: ['Next.js', 'TypeScript', 'Stripe', 'AI/ML'],
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     featured: true
   },
   {

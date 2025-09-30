@@ -14,7 +14,8 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden">
       {/* Background Animation */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
+        {/* Floating geometric shapes */}
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 bg-primary-100 rounded-full opacity-20"
           animate={{
@@ -51,6 +52,84 @@ const Hero = () => {
             ease: "easeInOut"
           }}
         />
+        
+        {/* Productivity indicators */}
+        <motion.div
+          className="absolute top-32 right-32 w-4 h-4 bg-green-400 rounded-full"
+          animate={{
+            scale: [1, 1.5, 1],
+            opacity: [0.5, 1, 0.5],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+        <motion.div
+          className="absolute bottom-32 left-32 w-3 h-3 bg-primary-400 rounded-full"
+          animate={{
+            scale: [1, 1.3, 1],
+            opacity: [0.7, 1, 0.7],
+          }}
+          transition={{
+            duration: 2.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 0.5
+          }}
+        />
+        <motion.div
+          className="absolute top-1/3 right-1/4 w-2 h-2 bg-yellow-400 rounded-full"
+          animate={{
+            scale: [1, 1.8, 1],
+            opacity: [0.6, 1, 0.6],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1
+          }}
+        />
+        
+        {/* Energy lines */}
+        <motion.div
+          className="absolute top-1/4 left-1/3 w-32 h-1 bg-gradient-to-r from-transparent via-primary-300 to-transparent opacity-30"
+          animate={{
+            x: [-100, 100, -100],
+            opacity: [0.3, 0.6, 0.3],
+          }}
+          transition={{
+            duration: 4,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+        <motion.div
+          className="absolute bottom-1/3 right-1/3 w-24 h-1 bg-gradient-to-r from-transparent via-green-300 to-transparent opacity-40"
+          animate={{
+            x: [100, -100, 100],
+            opacity: [0.4, 0.7, 0.4],
+          }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 1.5
+          }}
+        />
+        
+        {/* Grid pattern overlay */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="w-full h-full" style={{
+            backgroundImage: `
+              linear-gradient(rgba(14, 165, 233, 0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(14, 165, 233, 0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '50px 50px'
+          }}></div>
+        </div>
       </div>
 
       <div className="container-custom relative z-10">

@@ -2,15 +2,16 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Globe, Bot, Target, Palette, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { services } from '@/data/services'
+import ServiceIcon from './ServiceIcon'
 
 const iconMap = {
-  Globe,
-  Bot,
-  Target,
-  Palette,
-}
+  'websites-webshops': 'website',
+  'ai-tools-automatisering': 'chatbot',
+  'leadgeneratie-marketing': 'leadgen',
+  'productontwerp-prototyping': 'design',
+} as const
 
 const ServicesGrid = () => {
   return (
@@ -33,7 +34,7 @@ const ServicesGrid = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
-            const IconComponent = iconMap[service.icon as keyof typeof iconMap]
+            const iconType = iconMap[service.slug as keyof typeof iconMap]
             
             return (
               <motion.div
@@ -45,22 +46,32 @@ const ServicesGrid = () => {
                 className="group"
               >
                 <Link href={`/diensten/${service.slug}`}>
-                  <div className="bg-white rounded-xl p-8 h-full shadow-sm hover:shadow-lg transition-all duration-300 group-hover:-translate-y-2">
-                    <div className="mb-6">
-                      <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-500 transition-colors duration-300">
-                        <IconComponent className="h-8 w-8 text-primary-500 group-hover:text-white transition-colors duration-300" />
-                      </div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                        {service.title}
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        {service.shortDescription}
-                      </p>
-                    </div>
+                  <div className="bg-white rounded-xl p-8 h-full shadow-sm hover:shadow-lg transition-all duration-300 group-hover:-translate-y-2 relative overflow-hidden">
+                    {/* Background gradient effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     
-                    <div className="flex items-center text-primary-500 font-medium group-hover:translate-x-2 transition-transform duration-300">
-                      <span>Meer informatie</span>
-                      <ArrowRight className="h-4 w-4 ml-2" />
+                    <div className="relative z-10">
+                      <div className="mb-6">
+                        <div className="w-20 h-20 bg-primary-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary-500 transition-colors duration-300 relative">
+                          <ServiceIcon 
+                            type={iconType} 
+                            className="group-hover:scale-110 transition-transform duration-300" 
+                          />
+                          {/* Glow effect */}
+                          <div className="absolute inset-0 rounded-xl bg-primary-500 opacity-0 group-hover:opacity-20 blur-lg transition-opacity duration-300"></div>
+                        </div>
+                        <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
+                          {service.title}
+                        </h3>
+                        <p className="text-gray-600 leading-relaxed">
+                          {service.shortDescription}
+                        </p>
+                      </div>
+                      
+                      <div className="flex items-center text-primary-500 font-medium group-hover:translate-x-2 transition-transform duration-300">
+                        <span>Meer informatie</span>
+                        <ArrowRight className="h-4 w-4 ml-2" />
+                      </div>
                     </div>
                   </div>
                 </Link>
