@@ -23,7 +23,7 @@ export const cases: Case[] = [
     solution: 'We hebben een volledig responsive website ontwikkeld met moderne design principes, geoptimaliseerde laadtijden en een intuïtieve navigatie. De site combineert elegante typografie met subtiele animaties.',
     result: 'Verbeterde gebruikerservaring, snellere laadtijden en een professionele online aanwezigheid die het premium brand image versterkt.',
     slug: 'silty-pleasure',
-    image: '/images/silty-pleasure-thumbnail.jpg',
+    image: '/images/screenshot-silty-pleasure.png',
     category: 'Websites & Webshops',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     featured: true

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, ExternalLink } from 'lucide-react'
 import { cases } from '@/data/cases'
 
@@ -41,60 +42,16 @@ const CasesGrid = () => {
                   {/* Case image */}
                   <div className="h-64 relative overflow-hidden">
                     {caseItem.id === 'silty-pleasure' ? (
-                      // Silty Pleasure specific image
-                      <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
-                        <div className="text-center relative z-10">
-                          <div className="w-20 h-12 bg-white rounded-lg shadow-lg border-2 border-gray-200 overflow-hidden mb-4 mx-auto">
-                            {/* Browser header */}
-                            <div className="h-3 bg-gray-100 flex items-center px-2">
-                              <div className="flex space-x-1">
-                                <div className="w-2 h-2 bg-red-400 rounded-full"></div>
-                                <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                              </div>
-                            </div>
-                            {/* Website content preview */}
-                            <div className="p-2 space-y-1">
-                              <div className="h-1 bg-gray-800 rounded w-3/4"></div>
-                              <div className="h-1 bg-gray-400 rounded w-1/2"></div>
-                              <div className="h-1 bg-gray-400 rounded w-2/3"></div>
-                              <div className="flex space-x-1 mt-1">
-                                <div className="w-2 h-2 bg-gray-300 rounded"></div>
-                                <div className="w-2 h-2 bg-gray-300 rounded"></div>
-                                <div className="w-2 h-2 bg-gray-300 rounded"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <p className="text-gray-600 font-medium text-sm">Silty Pleasure</p>
-                        </div>
-                        {/* Subtle background elements */}
-                        <div className="absolute inset-0">
-                          <motion.div
-                            className="absolute top-4 right-4 w-6 h-6 bg-gray-300 rounded-full opacity-20"
-                            animate={{
-                              scale: [1, 1.2, 1],
-                              opacity: [0.2, 0.4, 0.2],
-                            }}
-                            transition={{
-                              duration: 4,
-                              repeat: Infinity,
-                              ease: "easeInOut"
-                            }}
-                          />
-                          <motion.div
-                            className="absolute bottom-4 left-4 w-4 h-4 bg-gray-400 rounded-full opacity-30"
-                            animate={{
-                              scale: [1, 1.3, 1],
-                              opacity: [0.3, 0.5, 0.3],
-                            }}
-                            transition={{
-                              duration: 3,
-                              repeat: Infinity,
-                              ease: "easeInOut",
-                              delay: 1
-                            }}
-                          />
-                        </div>
+                      // Silty Pleasure screenshot
+                      <div className="w-full h-full relative">
+                        <Image 
+                          src="/images/screenshot-silty-pleasure.png" 
+                          alt="Silty Pleasure Website Screenshot"
+                          fill
+                          className="object-cover"
+                        />
+                        {/* Overlay effect */}
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
                       </div>
                     ) : (
                       // Default case preview for other cases
