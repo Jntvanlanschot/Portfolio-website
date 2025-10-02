@@ -57,7 +57,7 @@ const CasesGrid = () => {
                       // House of Momma travel agency screenshot
                       <div className="w-full h-full relative">
                         <Image 
-                          src="/images/house-of-momma.jpg" 
+                          src="/images/travel-agency.jpg" 
                           alt="House of Momma Travel Agency Website Screenshot"
                           fill
                           className="object-cover"

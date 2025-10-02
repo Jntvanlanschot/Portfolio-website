@@ -37,7 +37,7 @@ export const cases: Case[] = [
     solution: 'We hebben een responsive website ontwikkeld met prachtige afbeeldingen van bestemmingen, duidelijke navigatie voor verschillende reistypes en een intuïtieve booking flow om de conversie te optimaliseren.',
     result: 'Verhoogde conversie op reisboekingen, verbeterde online vindbaarheid en sterke merkerkenning in de lifestyle travel sector.',
     slug: 'reisbureau',
-    image: '/images/house-of-momma.jpg',
+    image: '/images/travel-agency.jpg',
     category: 'Websites & Webshops',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     featured: true
