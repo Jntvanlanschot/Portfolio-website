@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import { Github, Linkedin, Mail } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -27,23 +26,6 @@ const Footer = () => {
               Digitale groei voor bedrijven. Van websites tot AI-tools, 
               wij helpen je online te groeien.
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social) => {
-                const IconComponent = social.icon
-                return (
-                  <a
-                    key={social.name}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-500 transition-colors duration-200"
-                    aria-label={social.name}
-                  >
-                    <IconComponent className="h-5 w-5" />
-                  </a>
-                )
-              })}
-            </div>
           </div>
 
           {/* Navigation */}
