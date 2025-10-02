@@ -16,7 +16,7 @@ export interface Case {
 export const cases: Case[] = [
   {
     id: 'silty-pleasure',
-    title: 'Website voor ee catering bedrijf',
+    title: 'Website voor een catering bedrijf',
     client: 'Silty Pleasure',
     description: 'Een moderne website voor een oester catering bedrijf gemaakt met meerdere functionaliteiten. Van idee tot uitvoering binnen een week.',
     challenge: 'De klant wilde een website die hun premium brand image weerspiegelt en tegelijkertijd gebruiksvriendelijk is voor hun doelgroep. De site moest zowel informatief als visueel aantrekkelijk zijn.',
@@ -29,17 +29,17 @@ export const cases: Case[] = [
     featured: true
   },
   {
-    id: 'ai-receptionist',
-    title: 'AI-Receptionist voor Zorgverlener',
-    client: 'Medisch Centrum Amsterdam',
-    description: 'Een intelligente chatbot die 24/7 patiëntvragen beantwoordt en afspraken inplant.',
-    challenge: 'Het medisch centrum kreeg dagelijks honderden telefoontjes voor het maken van afspraken en het beantwoorden van veelgestelde vragen. Dit kostte veel tijd van het personeel.',
-    solution: 'We hebben een AI-receptionist ontwikkeld die patiënten kan helpen met afspraken maken, vragen beantwoorden en doorverwijzen naar de juiste specialist.',
-    result: '70% minder telefoontjes, 24/7 beschikbaarheid en 95% tevredenheid onder patiënten.',
-    slug: 'ai-receptionist',
-    image: '/images/case-ai-receptionist.jpg',
-    category: 'AI-Tools & Automatisering',
-    technologies: ['OpenAI', 'Node.js', 'Webhook', 'Calendar API'],
+    id: 'reisbureau',
+    title: 'Website voor een reisbureau',
+    client: 'House of Momma',
+    description: 'Een inspirerende website voor een exclusief reisbureau gespecialiseerd in fitness retreats en wellness reizen naar tropische bestemmingen.',
+    challenge: 'Het reisbureau wilde een website die hun premium lifestyle retreats duidelijk communiceert en potentiële klanten inspireert tot booking. De site moest zowel de exclusiviteit als de avontuurlijke kant van hun reizen tonen.',
+    solution: 'We hebben een responsive website ontwikkeld met prachtige afbeeldingen van bestemmingen, duidelijke navigatie voor verschillende reistypes en een intuïtieve booking flow om de conversie te optimaliseren.',
+    result: 'Verhoogde conversie op reisboekingen, verbeterde online vindbaarheid en sterke merkerkenning in de lifestyle travel sector.',
+    slug: 'reisbureau',
+    image: '/images/house-of-momma.jpg',
+    category: 'Websites & Webshops',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     featured: true
   },
   {
