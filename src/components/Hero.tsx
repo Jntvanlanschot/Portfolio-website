@@ -12,12 +12,12 @@ const Hero = () => {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center dark-section overflow-hidden grid-pattern">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating geometric shapes */}
         <motion.div
-          className="absolute top-20 left-10 w-72 h-72 bg-primary-100 rounded-full opacity-20"
+          className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full opacity-60"
           animate={{
             y: [0, -20, 0],
             x: [0, 10, 0],
@@ -29,7 +29,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-20 right-10 w-96 h-96 bg-primary-50 rounded-full opacity-30"
+          className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full opacity-50"
           animate={{
             y: [0, 20, 0],
             x: [0, -10, 0],
@@ -41,7 +41,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary-200 rounded-full opacity-10"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-pink-500/10 to-red-500/10 rounded-full opacity-40"
           animate={{
             scale: [1, 1.1, 1],
             rotate: [0, 180, 360],
@@ -138,10 +138,10 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
             Websites & Tools die{' '}
-            <span className="text-primary-500">bedrijven</span>{' '}
+            <span className="glow-text">bedrijven</span>{' '}
             laten groeien
           </motion.h1>
 
@@ -149,7 +149,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
             Van websites en webshops tot AI-receptionisten, leadgeneratie en productontwerp. 
             Wij combineren techniek, design en marketing om jouw bedrijf online te laten groeien.
@@ -163,13 +163,13 @@ const Hero = () => {
           >
             <button
               onClick={scrollToServices}
-              className="btn-primary text-lg px-8 py-4"
+              className="btn-glow text-lg px-8 py-4"
             >
               Bekijk onze diensten
             </button>
             <a
               href="/contact"
-              className="btn-secondary text-lg px-8 py-4"
+              className="btn-primary text-lg px-8 py-4"
             >
               Neem contact op
             </a>
@@ -187,7 +187,7 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="flex flex-col items-center text-gray-400 cursor-pointer"
+            className="flex flex-col items-center text-cyan-400 cursor-pointer"
           onClick={scrollToServices}
         >
           <span className="text-sm mb-2">Scroll naar beneden</span>
