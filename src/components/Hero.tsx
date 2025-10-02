@@ -140,9 +140,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
-            Websites & Tools die{' '}
-            <span className="glow-text">bedrijven</span>{' '}
-            laten groeien
+            Websites & AI die{' '}
+            <span className="glow-text">converteren</span>.
           </motion.h1>
 
           <motion.p
@@ -151,8 +150,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Van websites en webshops tot AI-receptionisten, leadgeneratie en productontwerp. 
-            Wij combineren techniek, design en marketing om jouw bedrijf online te laten groeien.
+            We ontwerpen, bouwen en automatiseren jouw digitale funnel—van site tot AI-receptionist.
           </motion.p>
 
           <motion.div
@@ -165,13 +163,13 @@ const Hero = () => {
               onClick={scrollToServices}
               className="btn-glow text-lg px-8 py-4"
             >
-              Bekijk onze diensten
+              Voorstel aanvragen
             </button>
             <a
-              href="/contact"
+              href="#process"
               className="btn-primary text-lg px-8 py-4"
             >
-              Neem contact op
+              Bekijk ons proces
             </a>
           </motion.div>
         </div>
