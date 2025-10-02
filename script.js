@@ -484,6 +484,82 @@ class PerformanceOptimizer {
   }
 }
 
+// Roadmap Animation Manager
+class RoadmapManager {
+  constructor() {
+    this.roadmapSteps = document.querySelectorAll('.roadmap__step');
+    this.init();
+  }
+  
+  init() {
+    this.setupIconAnimations();
+    this.setupConnectivityEffects();
+  }
+  
+  setupIconAnimations() {
+    this.roadmapSteps.forEach((step, index) => {
+      const icon = step.querySelector('.roadmap__icon');
+      
+      if (!icon) return;
+      
+      // Staggered entrance animation
+      setTimeout(() => {
+        icon.style.opacity = '0';
+        icon.style.transform = 'translateY(50px) scale(0.5)';
+        icon.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+        
+        setTimeout(() => {
+          icon.style.opacity = '1';
+          icon.style.transform = 'translateY(0) scale(1)';
+        }, 100);
+      }, index * 200);
+      
+      // Continuous pulse animation
+      icon.addEventListener('mouseenter', () => {
+        this.addPulseAnimation(icon);
+      });
+      
+      icon.addEventListener('mouseleave', () => {
+        this.removePulseAnimation(icon);
+      });
+    });
+  }
+  
+  setupConnectivityEffects() {
+    const connectors = document.querySelectorAll('.roadmap__connector');
+    
+    connectors.forEach((connector, index) => {
+      // Animate connection lines on scroll into view
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              connector.style.width = '0px';
+              connector.style.transition = 'width 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+              
+              setTimeout(() => {
+                connector.style.width = '2rem';
+              }, 100);
+            }, index * 300);
+            
+            observer.unobserve(connector);
+          }
+        });
+      });
+      
+      observer.observe(connector);
+    });
+  }
+  
+  addPulseAnimation(icon) {
+    icon.style.animation = 'roadmapIconPulse 1.5s ease-in-out infinite';
+  }
+  
+  removePulseAnimation(icon) {
+    icon.style.animation = '';
+  }
+}
+
 // Initialize everything when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize managers
@@ -494,6 +570,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new SmoothScrollManager();
   new ImageLoader();
   new PerformanceOptimizer();
+  new RoadmapManager();
   
   // Add loaded class to body for CSS transitions
   document.body.classList.add('loaded');
