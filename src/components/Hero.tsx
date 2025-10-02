@@ -153,7 +153,7 @@ const Hero = () => {
           >
             <button
               onClick={scrollToServices}
-              className="btn-glow text-lg px-8 py-4"
+              className="bg-white text-gray-900 hover:bg-gray-100 font-medium px-8 py-4 rounded-lg transition-all duration-300 shadow-lg border border-gray-200 text-lg"
             >
               Voorstel aanvragen
             </button>
