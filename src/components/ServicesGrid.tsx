@@ -43,9 +43,7 @@ const ServicesGrid = () => {
               </p>
               
               <p className="text-base text-gray-600 leading-relaxed">
-                Elke website die wij bouwen is op maat gemaakt, volledig geoptimaliseerd voor 
-                zoekmachines en uitgerust met de nieuwste technologieën voor maximale prestaties 
-                en gebruikerservaring.
+                Wil jij een professionele website? Of nog meer van onze diensten? Neem contact op!
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">

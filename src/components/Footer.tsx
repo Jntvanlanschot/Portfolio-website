@@ -13,23 +13,6 @@ const Footer = () => {
     { name: 'Contact', href: '/contact' },
   ]
 
-  const socialLinks = [
-    {
-      name: 'LinkedIn',
-      href: 'https://linkedin.com/company/websites-tools',
-      icon: Linkedin,
-    },
-    {
-      name: 'GitHub',
-      href: 'https://github.com/websites-tools',
-      icon: Github,
-    },
-    {
-      name: 'Email',
-      href: 'mailto:contact@websites-tools.nl',
-      icon: Mail,
-    },
-  ]
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -92,7 +75,6 @@ const Footer = () => {
                 </a>
               </p>
               <p>Nederland</p>
-              <p>KvK: 12345678</p>
             </div>
           </div>
         </div>

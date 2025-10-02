@@ -16,9 +16,9 @@ export interface Case {
 export const cases: Case[] = [
   {
     id: 'silty-pleasure',
-    title: 'Silty Pleasure Website',
+    title: 'Website voor ee catering bedrijf',
     client: 'Silty Pleasure',
-    description: 'Een moderne, elegante website voor een premium lifestyle brand met focus op gebruiksvriendelijkheid en visuele impact.',
+    description: 'Een moderne website voor een oester catering bedrijf gemaakt met meerdere functionaliteiten. Van idee tot uitvoering binnen een week.',
     challenge: 'De klant wilde een website die hun premium brand image weerspiegelt en tegelijkertijd gebruiksvriendelijk is voor hun doelgroep. De site moest zowel informatief als visueel aantrekkelijk zijn.',
     solution: 'We hebben een volledig responsive website ontwikkeld met moderne design principes, geoptimaliseerde laadtijden en een intuïtieve navigatie. De site combineert elegante typografie met subtiele animaties.',
     result: 'Verbeterde gebruikerservaring, snellere laadtijden en een professionele online aanwezigheid die het premium brand image versterkt.',

@@ -55,7 +55,7 @@ const Roadmap = () => {
             </span>
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Een bewezen proces dat van start tot schaal zorgt voor maximale digitale groei en resultaten voor jouw bedrijf
+            Dit is hoe wij jouw business kunnen helpen groeien. Ook losse diensten zijn mogelijk! 
           </p>
         </motion.div>
 
