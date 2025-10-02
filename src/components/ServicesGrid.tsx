@@ -22,74 +22,49 @@ const ServicesGrid = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="max-w-6xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Onze Diensten
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We bieden complete digitale oplossingen die je bedrijf helpen groeien
-          </p>
-        </motion.div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Title */}
+            <div className="space-y-4">
+              <div className="w-full h-0.5 bg-gray-300 mb-8"></div>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
+                Complete website<br />
+                <span className="text-gray-700">oplossingen</span>
+              </h2>
+            </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => {
-            const iconType = iconMap[service.slug as keyof typeof iconMap]
-            
-            return (
-              <motion.div
-                key={service.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
-              >
-                <Link href={`/diensten/${service.slug}`}>
-                  <div className="bg-white rounded-xl p-8 h-full shadow-sm hover:shadow-lg transition-all duration-300 group-hover:-translate-y-2 relative overflow-hidden border border-gray-100">
-                    {/* Background gradient effect */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    
-                    <div className="relative z-10">
-                      <div className="mb-6">
-                        <div className="w-20 h-20 bg-blue-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-500 transition-all duration-300 relative">
-                          <ServiceIcon 
-                            type={iconType} 
-                            className="group-hover:scale-110 transition-transform duration-300" 
-                          />
-                          {/* Glow effect */}
-                          <div className="absolute inset-0 rounded-xl bg-blue-500 opacity-0 group-hover:opacity-20 blur-lg transition-opacity duration-300"></div>
-                        </div>
-                        <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
-                          {service.title}
-                        </h3>
-                        <p className="text-gray-600 leading-relaxed">
-                          {service.shortDescription}
-                        </p>
-                      </div>
-                      
-                      <div className="flex items-center text-blue-600 font-medium group-hover:translate-x-2 transition-transform duration-300">
-                        <span>Meer informatie</span>
-                        <ArrowRight className="h-4 w-4 ml-2" />
-                      </div>
-                    </div>
-                  </div>
+            {/* Right side - Story explanation */}
+            <div className="space-y-6">
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                Van websites en webshops tot AI-receptionisten, leadgeneratie en productontwerp. 
+                Wij combineren techniek, design en marketing om jouw bedrijf online te laten groeien 
+                met moderne, snel ladende oplossingen die converteren en je concurrentievoordeel geven.
+              </p>
+              
+              <p className="text-base text-gray-600 leading-relaxed">
+                Elke website die wij bouwen is op maat gemaakt, volledig geoptimaliseerd voor 
+                zoekmachines en uitgerust met de nieuwste technologieën voor maximale prestaties 
+                en gebruikerservaring.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center px-8 py-4 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white font-semibold rounded-lg transition-all duration-300"
+                >
+                  Project starten
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
-              </motion.div>
-            )
-          })}
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <Link href="/contact" className="bg-gray-900 text-white hover:bg-gray-800 font-medium px-6 py-3 rounded-lg transition-all duration-300 shadow-lg border border-gray-700">
-            Plan een kennismaking
-          </Link>
+                <Link 
+                  href="/cases" 
+                  className="inline-flex items-center px-8 py-4 text-gray-700 hover:text-gray-900 font-semibold underline hover:no-underline transition-all duration-300"
+                >
+                  Portfolio bekijken
+                </Link>
+              </div>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
