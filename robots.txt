@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://websites-tools.nl/sitemap.xml
+
+# Important pages
+Allow: /privacy-policy.html
+Allow: /algemene-voorwaarden.html
+
+# Image optimization
+Crawl-delay: 1
