@@ -87,7 +87,7 @@ const ServicesGrid = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Link href="/contact" className="btn-glow">
+          <Link href="/contact" className="bg-gray-900 text-white hover:bg-gray-800 font-medium px-6 py-3 rounded-lg transition-all duration-300 shadow-lg border border-gray-700">
             Plan een kennismaking
           </Link>
         </motion.div>

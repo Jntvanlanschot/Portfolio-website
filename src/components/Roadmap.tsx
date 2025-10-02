@@ -5,28 +5,28 @@ import { motion } from 'framer-motion'
 const Roadmap = () => {
   const steps = [
     {
-      title: "1. Build the Foundation",
-      description: "Website of webshop, modern en snel, SEO geoptimaliseerd",
+      title: "1. Bouw de basis",
+      description: "Website of webshop, modern en snel met alles wat jij nodig hebt om te starten",
       bgColor: "bg-blue-500"
     },
     {
-      title: "2. Grow Your Reach", 
-      description: "SEO, marketing funnels en lead generation",
+      title: "2. Groei je bereik", 
+      description: "Wij zorgen voor meer vindbaarheid via SEO en slimme marketing",
       bgColor: "bg-blue-600"
     },
     {
-      title: "3. Automate Customer Contact",
-      description: "AI receptionist, chatbots en scheduling", 
+      title: "3. Breid uit met slimme tools",
+      description: "We voegen slimme AI tools toe om alles in jouw business te automatiseren. Denk aan AI receptionist, chatbots en afspraken inplannen", 
       bgColor: "bg-blue-700"
     },
     {
-      title: "4. Expand with Smart Tools",
-      description: "AI marketing, content creation en workflow automation",
+      title: "4. Verbeter je marketing en productontwerp ",
+      description: "We passen AI Marketing en Productontwerp toe om je business te verbeteren",
       bgColor: "bg-blue-500"
     },
     {
-      title: "5. Scale with Data",
-      description: "Analytics, insights en continue groei",
+      title: "5. Groei verder met data",
+      description: "Inzichten in de data om hogere leadconversies te bereiken",
       bgColor: "bg-blue-600"
     }
   ]
@@ -50,7 +50,7 @@ const Roadmap = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Onze Roadmap:{' '}
             <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
-              Van Website tot AI-Aangedreven Groei
+              Hoe gaan wij jouw business vooruit helpen?
             </span>
           </h2>
         </motion.div>
