@@ -88,7 +88,7 @@ const Roadmap = () => {
                     {index === 2 && (
                       <>
                         <path d="M12 19l1-1c0-.5-.6-1-1.5-1-.9 0-2 .5-2 2"></path>
-                        <path d="M17.5 2.5a2.5 2.5 0 0 1 2.5 2.5v14a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 19V5a2.5 2.5 0 0 1 2.5-2.5z"></path>
+                        <path d="M17.5 2.5a2.5 2.5 0 0 1 1.5 2.5v14a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 19V5a2.5 2.5 0 0 1 2.5-2.5z"></path>
                       </>
                     )}
                     {index === 3 && (
@@ -121,7 +121,6 @@ const Roadmap = () => {
           ))}
         </div>
         
-        {/* Bottom CTA section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -153,7 +152,7 @@ const Roadmap = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
