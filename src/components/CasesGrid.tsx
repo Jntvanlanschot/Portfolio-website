@@ -10,7 +10,7 @@ const CasesGrid = () => {
   const featuredCases = cases.filter(caseItem => caseItem.featured)
 
   return (
-    <section id="cases" className="section-padding dark-section">
+    <section id="cases" className="section-padding bg-white">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -19,10 +19,10 @@ const CasesGrid = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Onze Cases
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Bekijk hoe we andere bedrijven hebben geholpen met hun digitale groei
           </p>
         </motion.div>

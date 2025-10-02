@@ -12,12 +12,12 @@ const Hero = () => {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center dark-section overflow-hidden grid-pattern">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-black to-slate-900 overflow-hidden">
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating geometric shapes */}
         <motion.div
-          className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full opacity-60"
+          className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-500/10 to-blue-600/10 rounded-full opacity-40"
           animate={{
             y: [0, -20, 0],
             x: [0, 10, 0],
@@ -29,7 +29,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full opacity-50"
+          className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-blue-600/10 to-blue-700/10 rounded-full opacity-30"
           animate={{
             y: [0, 20, 0],
             x: [0, -10, 0],
@@ -41,7 +41,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-pink-500/10 to-red-500/10 rounded-full opacity-40"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-blue-500/5 to-blue-700/5 rounded-full opacity-20"
           animate={{
             scale: [1, 1.1, 1],
             rotate: [0, 180, 360],
@@ -93,9 +93,9 @@ const Hero = () => {
           }}
         />
         
-        {/* Energy lines */}
+        {/* Subtle lines */}
         <motion.div
-          className="absolute top-1/4 left-1/3 w-32 h-1 bg-gradient-to-r from-transparent via-primary-300 to-transparent opacity-30"
+          className="absolute top-1/4 left-1/3 w-32 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-20"
           animate={{
             x: [-100, 100, -100],
             opacity: [0.3, 0.6, 0.3],
@@ -107,7 +107,7 @@ const Hero = () => {
           }}
         />
         <motion.div
-          className="absolute bottom-1/3 right-1/3 w-24 h-1 bg-gradient-to-r from-transparent via-green-300 to-transparent opacity-40"
+          className="absolute bottom-1/3 right-1/3 w-24 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-15"
           animate={{
             x: [100, -100, 100],
             opacity: [0.4, 0.7, 0.4],
@@ -120,16 +120,8 @@ const Hero = () => {
           }}
         />
         
-        {/* Grid pattern overlay */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="w-full h-full" style={{
-            backgroundImage: `
-              linear-gradient(rgba(14, 165, 233, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(14, 165, 233, 0.1) 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px'
-          }}></div>
-        </div>
+        {/* Subtle gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/5 via-transparent to-blue-900/5"></div>
       </div>
 
       <div className="container-custom relative z-10">
@@ -141,7 +133,7 @@ const Hero = () => {
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
             Websites & AI die{' '}
-            <span className="glow-text">converteren</span>.
+            <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">converteren</span>.
           </motion.h1>
 
           <motion.p

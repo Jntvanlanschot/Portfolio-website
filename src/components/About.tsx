@@ -23,7 +23,7 @@ const About = () => {
   ]
 
   return (
-    <section id="over-ons" className="section-padding bg-gray-50">
+    <section id="over-ons" className="section-padding bg-slate-800">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <motion.div
