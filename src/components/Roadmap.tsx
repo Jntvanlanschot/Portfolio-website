@@ -43,7 +43,7 @@ const Roadmap = () => {
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                   <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2">21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
                 </svg>
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full opacity-0 group-hover:opacity-20 blur-lg transition-opacity duration-300"></div>
               </div>
