@@ -11,8 +11,8 @@ const Header = () => {
         rel="noopener noreferrer"
         className="flex items-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-green-500/25"
       >
-        <MessageCircle className="h-4 w-4" />
         <span className="text-sm font-medium">Neem contact op</span>
+        <MessageCircle className="h-4 w-4" />
       </a>
     </div>
   )

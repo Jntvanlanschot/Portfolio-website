@@ -46,19 +46,13 @@ const ServicesGrid = () => {
                 Wil jij een professionele website? Of nog meer van onze diensten? Neem contact op!
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex justify-center pt-4">
                 <Link 
                   href="/contact" 
                   className="inline-flex items-center px-8 py-4 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white font-semibold rounded-lg transition-all duration-300"
                 >
                   Project starten
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-                <Link 
-                  href="/cases" 
-                  className="inline-flex items-center px-8 py-4 text-gray-700 hover:text-gray-900 font-semibold underline hover:no-underline transition-all duration-300"
-                >
-                  Portfolio bekijken
                 </Link>
               </div>
             </div>
