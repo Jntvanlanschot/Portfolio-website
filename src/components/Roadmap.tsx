@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const Roadmap = () => {
   const steps = [
@@ -71,40 +72,51 @@ const Roadmap = () => {
             >
               <div className="text-center">
                 <div className={`w-24 h-24 mx-auto mb-8 ${step.bgColor} rounded-full flex items-center justify-center text-white relative group-hover:scale-110 transition-all duration-300 shadow-lg shadow-blue-500/25`}>
-                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    {index === 0 && (
-                      <>
-                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                        <line x1="8" y1="21" x2="16" y2="21"></line>
-                        <line x1="12" y1="17" x2="12" y2="21"></line>
-                      </>
-                    )}
-                    {index === 1 && (
-                      <>
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                        <polyline points="9,22 9,12 15,12 15,22"></polyline>
-                      </>
-                    )}
-                    {index === 2 && (
-                      <>
-                        <path d="M12 19l1-1c0-.5-.6-1-1.5-1-.9 0-2 .5-2 2"></path>
-                        <path d="M17.5 2.5a2.5 2.5 0 0 1 1.5 2.5v14a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 19V5a2.5 2.5 0 0 1 2.5-2.5z"></path>
-                      </>
-                    )}
-                    {index === 3 && (
-                      <>
-                        <polygon points="13,2 3,14 12,16"></polygon>
-                        <rect x="13" y="14" width="12" height="8" rx="1"></rect>
-                      </>
-                    )}
-                    {index === 4 && (
-                      <>
-                        <path d="M18 20V10"></path>
-                        <path d="M12 20V4"></path>
-                        <path d="M6 20v-6"></path>
-                      </>
-                    )}
-                  </svg>
+                  {/* Custom Images for Steps 2, 3, 4 */}
+                  {index === 1 && (
+                    <Image
+                      src="/images/seo-pictogram.png"
+                      alt="SEO Pictogram"
+                      width={32}
+                      height={32}
+                      className="object-contain"
+                    />
+                  )}
+                  {index === 2 && (
+                    <Image
+                      src="/images/smart-tools-pictogram.png"
+                      alt="Smart Tools Pictogram"
+                      width={32}
+                      height={32}
+                      className="object-contain"
+                    />
+                  )}
+                  {index === 3 && (
+                    <Image
+                      src="/images/product-design-pictogram.png"
+                      alt="Product Design Pictogram"
+                      width={32}
+                      height={32}
+                      className="object-contain"
+                    />
+                  )}
+                  
+                  {/* SVG Icons for Steps 1 and 5 */}
+                  {index === 0 && (
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                  )}
+                  {index === 4 && (
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M18 20V10"></path>
+                      <path d="M12 20V4"></path>
+                      <path d="M6 20v-6"></path>
+                    </svg>
+                  )}
+                  
                   <div className="absolute inset-0 bg-blue-400 rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
                 </div>
                 
@@ -134,7 +146,7 @@ const Roadmap = () => {
                 Klaar om te starten?
               </h3>
               <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-                Vertel ons over je project en wij nemen je mee door onze roadmap naar digitale groei
+                Vertel ons over je project en wij helpen jou nog deze week!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
