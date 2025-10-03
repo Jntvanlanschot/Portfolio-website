@@ -132,8 +132,8 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
-            Websites & AI die{' '}
-            <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">jouw business verder helpen</span>.
+            Online Op Maat{' '}
+            <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent"></span>.
           </motion.h1>
 
           <motion.p
@@ -142,7 +142,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            We ontwerpen, bouwen en automatiseren alles wat jij nodig hebt om je business te laten groeien.
+            We ontwerpen, bouwen en automatiseren alles wat jij nodig hebt om jouw online business te laten groeien.
           </motion.p>
 
           <motion.div
