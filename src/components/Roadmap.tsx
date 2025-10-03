@@ -32,7 +32,7 @@ const Roadmap = () => {
   ]
 
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden bg-slate-900">
+    <section id="roadmap" className="py-24 md:py-32 relative overflow-hidden bg-slate-900">
       {/* Background gradients */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/5 to-blue-600/5 rounded-full opacity-50 blur-3xl"></div>

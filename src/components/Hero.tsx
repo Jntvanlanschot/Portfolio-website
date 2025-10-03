@@ -158,7 +158,7 @@ const Hero = () => {
               Voorstel aanvragen
             </button>
             <a
-              href="#process"
+              href="#roadmap"
               className="btn-primary text-lg px-8 py-4"
             >
               Bekijk hoe wij te werk gaan
