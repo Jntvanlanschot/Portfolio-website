@@ -11,6 +11,13 @@ const Hero = () => {
     }
   }
 
+  const scrollToContact = () => {
+    const element = document.getElementById('contact')
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-black to-slate-900 overflow-hidden">
       {/* Background Animation */}
@@ -152,7 +159,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <button
-              onClick={scrollToServices}
+              onClick={scrollToContact}
               className="bg-white text-gray-900 hover:bg-gray-100 font-medium px-8 py-4 rounded-lg transition-all duration-300 shadow-lg border border-gray-200 text-lg"
             >
               Voorstel aanvragen
