@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: process.env.FROM_EMAIL || 'noreply@websites-tools.nl',
-      to: [process.env.TO_EMAIL || 'contact@websites-tools.nl'],
+      to: [process.env.TO_EMAIL || 'joostvlanschot@gmail.com'],
       subject: `Nieuw contactformulier bericht van ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
