@@ -16,7 +16,7 @@ const features: Feature[] = [
   {
     title: 'Moderne websites & webshops',
     description:
-      'Snel, gebruiksvriendelijk en vindbaar. Heldere structuur met focus op conversie en groei.',
+      'Binnen een week kunnen wij van idee naar website. Voor simpele of juist geavanceerde websites, bieden wij alles aan voor jouw idee.',
     imageSrc: '/images/second-pictogram.png',
     imageAlt: 'Second pictogram',
     href: '/diensten/websites-webshops',
@@ -24,15 +24,15 @@ const features: Feature[] = [
   {
     title: 'SEO & leadgeneratie',
     description:
-      'Groei je bereik met SEO, funnels en landingspagina\'s. Meetbaar resultaat en schaalbaar.',
+      'Door jouw website sneller vindbaar te maken op internet, zullen jouw klanten ook groeien. Wij zijn gespecialiseerd op dit gebied en helpen je graag je bereik te vergroten met SEO, funnels en landingspagina\'s. We kunnen ook een analyse doen voor jouw bestaande website om deze verder te helpen.',
     imageSrc: '/images/third-pictogram.png',
     imageAlt: 'Third pictogram',
     href: '/diensten/leadgeneratie-marketing',
   },
   {
-    title: 'AI-receptionisten & chatbots',
+    title: 'AI-Tools & Automatiseringen',
     description:
-      'Automatiseer klantcontact met slimme AI. Intake, afspraken en support zonder wachttijden.',
+      'Tegenwoordig kan alles sneller met behulp van AI. Stuur ons een appje als je iets wil automatiseren om tijd te besparen. Denk aan: Klantcontact, Intake, afspraken en support zonder wachttijden. Wij bouwen zo een Chatbot of een AI Receptionist voor je!',
     imageSrc: '/images/fourth-pictogram.png',
     imageAlt: 'Fourth pictogram',
     href: '/diensten/ai-tools-automatisering',
@@ -40,7 +40,7 @@ const features: Feature[] = [
   {
     title: 'Productontwerp & prototyping',
     description:
-      'Van idee tot schaalbaar digitaal product. Snel testen, itereren en naar markt brengen.',
+      'Op zoek naar nieuwe beelden, reclamevideo\'s, of productfotos? Wij helpen je daar graag mee!',
     imageSrc: '/images/fifth-pictogram.png',
     imageAlt: 'Fifth pictogram',
     href: '/diensten/productontwerp-prototyping',
