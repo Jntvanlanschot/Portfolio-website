@@ -16,7 +16,7 @@ const iconMap = {
 
 const ServicesGrid = () => {
   return (
-    <section id="diensten" className="section-padding bg-gray-800">
+    <section id="diensten" className="py-12 md:py-16 bg-gray-800">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -28,7 +28,6 @@ const ServicesGrid = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             {/* Left side - Title and content */}
             <div className="lg:col-span-2 space-y-6">
-              <div className="w-full h-0.5 bg-gray-600 mb-8"></div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
                 Complete website<br />
                 <span className="text-gray-300">oplossingen</span>
