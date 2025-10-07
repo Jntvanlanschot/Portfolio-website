@@ -24,7 +24,7 @@ const features: Feature[] = [
   {
     title: 'SEO & leadgeneratie',
     description:
-      'Groei je bereik met SEO, funnels en landingspagina's. Meetbaar resultaat en schaalbaar.',
+      'Groei je bereik met SEO, funnels en landingspagina\'s. Meetbaar resultaat en schaalbaar.',
     imageSrc: '/images/third-pictogram.png',
     imageAlt: 'Third pictogram',
     href: '/diensten/leadgeneratie-marketing',
