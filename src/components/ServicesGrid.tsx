@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { services } from '@/data/services'
@@ -25,13 +26,23 @@ const ServicesGrid = () => {
           className="max-w-6xl mx-auto"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Title */}
+            {/* Left side - Title with pictogram on large screens */}
             <div className="space-y-4">
               <div className="w-full h-0.5 bg-gray-300 mb-8"></div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
-                Complete website<br />
-                <span className="text-gray-700">oplossingen</span>
-              </h2>
+              <div className="flex items-start gap-6">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight flex-1">
+                  Complete website<br />
+                  <span className="text-gray-700">oplossingen</span>
+                </h2>
+                <Image
+                  src="/images/website-pictogram.svg"
+                  alt="Website pictogram"
+                  width={160}
+                  height={124}
+                  className="hidden lg:block w-40 h-auto"
+                  priority
+                />
+              </div>
             </div>
 
             {/* Right side - Story explanation */}

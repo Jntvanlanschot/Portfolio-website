@@ -62,12 +62,14 @@ const ContactForm = () => {
           message: ''
         })
       } else {
-        throw new Error('Er is iets misgegaan')
+        const errorData = await response.json()
+        throw new Error(errorData.error || 'Er is iets misgegaan')
       }
     } catch (error) {
+      console.error('Contact form error:', error)
       setStatus({
         type: 'error',
-        message: 'Er is iets misgegaan. Probeer het later opnieuw.'
+        message: error instanceof Error ? error.message : 'Er is iets misgegaan. Probeer het later opnieuw.'
       })
     }
   }
