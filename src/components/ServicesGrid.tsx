@@ -58,8 +58,8 @@ const ServicesGrid = () => {
             {/* Right side - Pictogram */}
             <div className="flex justify-center lg:justify-end">
               <Image
-                src="/images/website-pictogram.svg"
-                alt="Website pictogram"
+                src="/images/first-pictogram.png"
+                alt="First pictogram"
                 width={200}
                 height={155}
                 className="w-auto h-48 md:h-56 lg:h-64"

@@ -17,32 +17,32 @@ const features: Feature[] = [
     title: 'Moderne websites & webshops',
     description:
       'Snel, gebruiksvriendelijk en vindbaar. Heldere structuur met focus op conversie en groei.',
-    imageSrc: '/images/website-pictogram.svg',
-    imageAlt: 'Website pictogram',
+    imageSrc: '/images/second-pictogram.png',
+    imageAlt: 'Second pictogram',
     href: '/diensten/websites-webshops',
   },
   {
     title: 'SEO & leadgeneratie',
     description:
-      'Groei je bereik met SEO, funnels en landingspagina’s. Meetbaar resultaat en schaalbaar.',
-    imageSrc: '/images/seo-pictogram.png',
-    imageAlt: 'SEO pictogram',
+      'Groei je bereik met SEO, funnels en landingspagina's. Meetbaar resultaat en schaalbaar.',
+    imageSrc: '/images/third-pictogram.png',
+    imageAlt: 'Third pictogram',
     href: '/diensten/leadgeneratie-marketing',
   },
   {
     title: 'AI-receptionisten & chatbots',
     description:
       'Automatiseer klantcontact met slimme AI. Intake, afspraken en support zonder wachttijden.',
-    imageSrc: '/images/smart-tools-pictogram.png',
-    imageAlt: 'Slimme tools pictogram',
+    imageSrc: '/images/fourth-pictogram.png',
+    imageAlt: 'Fourth pictogram',
     href: '/diensten/ai-tools-automatisering',
   },
   {
     title: 'Productontwerp & prototyping',
     description:
       'Van idee tot schaalbaar digitaal product. Snel testen, itereren en naar markt brengen.',
-    imageSrc: '/images/product-design-pictogram.png',
-    imageAlt: 'Productontwerp pictogram',
+    imageSrc: '/images/fifth-pictogram.png',
+    imageAlt: 'Fifth pictogram',
     href: '/diensten/productontwerp-prototyping',
   },
 ]
@@ -56,6 +56,17 @@ const FeatureShowcase = () => {
   return (
     <section className="section-padding bg-white">
       <div className="container-custom">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#333] leading-tight">
+            Wat bieden wij aan?
+          </h2>
+        </motion.div>
         <div className="space-y-12 md:space-y-16">
           {features.map((item, index) => {
             const isReversed = index % 2 === 1
