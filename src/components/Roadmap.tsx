@@ -50,10 +50,7 @@ const Roadmap = () => {
         >
           <div className="w-24 h-1 bg-[#6c63ff] mx-auto mb-8"></div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
-            Van idee tot<br />
-            <span className="bg-gradient-to-r from-[#6c63ff] to-[#5a52e6] bg-clip-text text-transparent">
-              groeiende business
-            </span>
+            Dit is hoe wij te werk gaan
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Dit is hoe wij jouw business kunnen helpen groeien. Ook losse diensten zijn mogelijk! 
