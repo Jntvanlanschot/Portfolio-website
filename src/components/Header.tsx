@@ -4,14 +4,14 @@ import { MessageCircle } from 'lucide-react'
 
 const Header = () => {
   return (
-    <header className="bg-gray-50 border-b border-gray-200 sticky top-0 z-50">
+    <header className="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
       <div className="container-custom">
         <div className="flex items-center justify-between py-4">
           {/* Logo/Title */}
           <div className="flex items-center">
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-2xl md:text-3xl font-bold text-white leading-tight">
               Online Op{' '}
-              <span className="text-[#d2d0eb]">Maat</span>
+              <span className="text-[#6c63ff]">Maat</span>
             </h1>
           </div>
           

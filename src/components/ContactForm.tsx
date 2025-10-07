@@ -223,7 +223,7 @@ const ContactForm = () => {
                       ? 'bg-green-50 text-green-700 border border-green-200'
                       : status.type === 'error'
                       ? 'bg-red-50 text-red-700 border border-red-200'
-                      : 'bg-[#d2d0eb]/10 text-[#d2d0eb] border border-[#d2d0eb]/30'
+                      : 'bg-[#6c63ff]/10 text-[#6c63ff] border border-[#6c63ff]/30'
                   }`}
                 >
                   {status.type === 'success' ? (
