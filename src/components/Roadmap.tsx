@@ -8,27 +8,27 @@ const Roadmap = () => {
     {
       title: "1. Bouw de basis",
       description: "Website of webshop, modern en snel met alles wat jij nodig hebt om te starten",
-      bgColor: "bg-blue-500"
+      bgColor: "bg-[#d2d0eb]"
     },
     {
       title: "2. Groei je bereik", 
       description: "Wij zorgen voor meer vindbaarheid via SEO en slimme marketing",
-      bgColor: "bg-blue-600"
+      bgColor: "bg-[#c4c1e0]"
     },
     {
       title: "3. Breid uit met slimme tools",
       description: "We voegen slimme AI tools toe om alles in jouw business te automatiseren. Denk aan AI receptionist, chatbots en afspraken inplannen", 
-      bgColor: "bg-blue-700"
+      bgColor: "bg-[#b5b2d5]"
     },
     {
       title: "4. Verbeter je marketing en productontwerp ",
       description: "We passen AI Marketing en Productontwerp toe om je business te verbeteren",
-      bgColor: "bg-blue-500"
+      bgColor: "bg-[#d2d0eb]"
     },
     {
       title: "5. Groei verder met data",
       description: "Inzichten in de data om hogere leadconversies te bereiken",
-      bgColor: "bg-blue-600"
+      bgColor: "bg-[#c4c1e0]"
     }
   ]
 
@@ -36,8 +36,8 @@ const Roadmap = () => {
     <section id="roadmap" className="py-24 md:py-32 relative overflow-hidden bg-slate-900">
       {/* Background gradients */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/5 to-blue-600/5 rounded-full opacity-50 blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-600/5 to-blue-700/5 rounded-full opacity-50 blur-3xl"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-[#d2d0eb]/5 to-[#c4c1e0]/5 rounded-full opacity-50 blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-r from-[#c4c1e0]/5 to-[#b5b2d5]/5 rounded-full opacity-50 blur-3xl"></div>
       </div>
 
       <div className="container-custom relative z-10">
@@ -48,10 +48,10 @@ const Roadmap = () => {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <div className="w-24 h-1 bg-blue-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-[#d2d0eb] mx-auto mb-8"></div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight">
             Van idee tot<br />
-            <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#d2d0eb] to-[#c4c1e0] bg-clip-text text-transparent">
               groeiende business
             </span>
           </h2>
@@ -71,7 +71,7 @@ const Roadmap = () => {
               className="relative group"
             >
               <div className="text-center">
-                <div className={`w-24 h-24 mx-auto mb-8 ${step.bgColor} rounded-full flex items-center justify-center text-white relative group-hover:scale-110 transition-all duration-300 shadow-lg shadow-blue-500/25`}>
+                <div className={`w-24 h-24 mx-auto mb-8 ${step.bgColor} rounded-full flex items-center justify-center text-white relative group-hover:scale-110 transition-all duration-300 shadow-lg shadow-[#d2d0eb]/25`}>
                   {/* Custom Images for Steps 2, 3, 4 */}
                   {index === 1 && (
                     <Image
@@ -117,17 +117,17 @@ const Roadmap = () => {
                     </svg>
                   )}
                   
-                  <div className="absolute inset-0 bg-blue-400 rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-[#d2d0eb] rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
                 </div>
                 
-                <div className="bg-white/10 backdrop-blur-sm border border-blue-200/20 rounded-2xl p-8 group-hover:border-blue-500/40 transition-all duration-300 group-hover:-translate-y-2 h-full">
-                  <h3 className="text-xl font-bold text-blue-400 mb-4 leading-tight">{step.title}</h3>
+                <div className="bg-white/10 backdrop-blur-sm border border-[#d2d0eb]/20 rounded-2xl p-8 group-hover:border-[#d2d0eb]/40 transition-all duration-300 group-hover:-translate-y-2 h-full">
+                  <h3 className="text-xl font-bold text-[#d2d0eb] mb-4 leading-tight">{step.title}</h3>
                   <p className="text-gray-300 text-base leading-relaxed">{step.description}</p>
                 </div>
               </div>
               
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-10 left-full w-8 h-0.5 bg-blue-500 opacity-60"></div>
+                <div className="hidden md:block absolute top-10 left-full w-8 h-0.5 bg-[#d2d0eb] opacity-60"></div>
               )}
             </motion.div>
           ))}
@@ -141,7 +141,7 @@ const Roadmap = () => {
           className="text-center mt-16"
         >
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm border border-blue-200/20 rounded-2xl p-12">
+            <div className="bg-white/5 backdrop-blur-sm border border-[#d2d0eb]/20 rounded-2xl p-12">
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 Klaar om te starten?
               </h3>
@@ -151,13 +151,13 @@ const Roadmap = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                   href="#contact" 
-                  className="inline-flex items-center px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg"
+                  className="inline-flex items-center px-8 py-4 bg-[#d2d0eb] hover:bg-[#c4c1e0] text-white font-semibold rounded-lg transition-all duration-300 shadow-lg"
                 >
                   Start je project
                 </a>
                 <a 
                   href="#cases" 
-                  className="inline-flex items-center px-8 py-4 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white font-semibold rounded-lg transition-all duration-300"
+                  className="inline-flex items-center px-8 py-4 border-2 border-[#d2d0eb] text-[#d2d0eb] hover:bg-[#d2d0eb] hover:text-white font-semibold rounded-lg transition-all duration-300"
                 >
                   Bekijk onze cases
                 </a>

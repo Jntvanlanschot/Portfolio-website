@@ -55,7 +55,7 @@ const About = () => {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <div className="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-[#d2d0eb] rounded-lg flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-3">
@@ -78,9 +78,9 @@ const About = () => {
           >
             <div className="bg-white rounded-xl p-8 shadow-sm relative overflow-hidden">
               {/* Background effects */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="absolute top-4 right-4 w-16 h-16 bg-blue-100 rounded-full opacity-20"></div>
-              <div className="absolute bottom-4 left-4 w-12 h-12 bg-blue-200 rounded-full opacity-30"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#d2d0eb]/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute top-4 right-4 w-16 h-16 bg-[#d2d0eb] rounded-full opacity-20"></div>
+              <div className="absolute bottom-4 left-4 w-12 h-12 bg-[#c4c1e0] rounded-full opacity-30"></div>
               
               <div className="relative z-10">
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">

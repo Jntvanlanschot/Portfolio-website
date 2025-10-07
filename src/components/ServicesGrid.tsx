@@ -25,28 +25,15 @@ const ServicesGrid = () => {
           viewport={{ once: true }}
           className="max-w-6xl mx-auto"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Title with pictogram on large screens */}
-            <div className="space-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            {/* Left side - Title and content */}
+            <div className="lg:col-span-2 space-y-6">
               <div className="w-full h-0.5 bg-gray-300 mb-8"></div>
-              <div className="flex items-start gap-6">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight flex-1">
-                  Complete website<br />
-                  <span className="text-gray-700">oplossingen</span>
-                </h2>
-                <Image
-                  src="/images/website-pictogram.svg"
-                  alt="Website pictogram"
-                  width={160}
-                  height={124}
-                  className="hidden lg:block w-40 h-auto"
-                  priority
-                />
-              </div>
-            </div>
-
-            {/* Right side - Story explanation */}
-            <div className="space-y-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
+                Complete website<br />
+                <span className="text-gray-700">oplossingen</span>
+              </h2>
+              
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                 Van websites en webshops tot AI-receptionisten, leadgeneratie en productontwerp. 
                 Wij combineren techniek, design en marketing om jouw bedrijf online te laten groeien 
@@ -66,6 +53,18 @@ const ServicesGrid = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </div>
+            </div>
+
+            {/* Right side - Pictogram */}
+            <div className="flex justify-center lg:justify-end">
+              <Image
+                src="/images/website-pictogram.svg"
+                alt="Website pictogram"
+                width={200}
+                height={155}
+                className="w-auto h-48 md:h-56 lg:h-64"
+                priority
+              />
             </div>
           </div>
         </motion.div>

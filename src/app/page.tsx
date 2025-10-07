@@ -13,7 +13,7 @@ export default function Home() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
               Online Op{' '}
-              <span className="bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent">Maat</span>
+              <span className="text-[#d2d0eb]">Maat</span>
             </h1>
           </div>
         </div>
