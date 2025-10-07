@@ -1,4 +1,5 @@
 import ServicesGrid from '@/components/ServicesGrid'
+import FeatureShowcase from '@/components/FeatureShowcase'
 import Roadmap from '@/components/Roadmap'
 import CasesGrid from '@/components/CasesGrid'
 import About from '@/components/About'
@@ -19,6 +20,7 @@ export default function Home() {
         </div>
       </section>
       <ServicesGrid />
+      <FeatureShowcase />
       <Roadmap />
       <CasesGrid />
       <About />
