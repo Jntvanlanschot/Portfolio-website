@@ -25,8 +25,8 @@ const features: Feature[] = [
     title: 'SEO & leadgeneratie',
     description:
       'Door jouw website sneller vindbaar te maken op internet, zullen jouw klanten ook groeien. Wij zijn gespecialiseerd op dit gebied en helpen je graag je bereik te vergroten met SEO, funnels en landingspagina\'s. We kunnen ook een analyse doen voor jouw bestaande website om deze verder te helpen.',
-    imageSrc: '/images/third-pictogram.png',
-    imageAlt: 'Third pictogram',
+    imageSrc: '/images/Quikr.png',
+    imageAlt: 'Quikr website showcase',
     href: '/diensten/leadgeneratie-marketing',
   },
   {
@@ -41,8 +41,8 @@ const features: Feature[] = [
     title: 'Productontwerp & prototyping',
     description:
       'Op zoek naar nieuwe beelden, reclamevideo\'s, of productfotos? Wij helpen je daar graag mee!',
-    imageSrc: '/images/fifth-pictogram.png',
-    imageAlt: 'Fifth pictogram',
+    imageSrc: '/images/Ultherakliniek.png',
+    imageAlt: 'Ulthera Kliniek website showcase',
     href: '/diensten/productontwerp-prototyping',
   },
 ]
