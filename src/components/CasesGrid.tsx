@@ -65,6 +65,30 @@ const CasesGrid = () => {
                         {/* Overlay effect */}
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
                       </div>
+                    ) : caseItem.id === 'quikr-talent' ? (
+                      // Quikr Talent website screenshot
+                      <div className="w-full h-full relative">
+                        <Image 
+                          src="/images/quikr-talent.png" 
+                          alt="Quikr Talent Website Screenshot"
+                          fill
+                          className="object-cover"
+                        />
+                        {/* Overlay effect */}
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                      </div>
+                    ) : caseItem.id === 'ultherakliniek' ? (
+                      // Ulthera Kliniek website screenshot
+                      <div className="w-full h-full relative">
+                        <Image 
+                          src="/images/ultherakliniek.png" 
+                          alt="Ulthera Kliniek Website Screenshot"
+                          fill
+                          className="object-cover"
+                        />
+                        {/* Overlay effect */}
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
+                      </div>
                     ) : (
                       // Default case preview for other cases
                       <div className="h-full bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center relative">

@@ -43,6 +43,34 @@ export const cases: Case[] = [
     featured: true
   },
   {
+    id: 'quikr-talent',
+    title: 'Recruitment Website',
+    client: 'Quikr Talent',
+    description: 'Een moderne recruitment website voor een talentbureau gespecialiseerd in office professionals.',
+    challenge: 'Quikr Talent wilde een website die hun unieke aanpak van talent matching communiceert en zowel werkgevers als kandidaten aanspreekt.',
+    solution: 'We hebben een responsive website ontwikkeld met duidelijke secties voor werkgevers en kandidaten, moderne animaties en een gebruiksvriendelijke interface.',
+    result: 'Verbeterde gebruikerservaring en duidelijke communicatie van hun talentgedreven aanpak.',
+    slug: 'quikr-talent',
+    image: '/images/quikr-talent.png',
+    category: 'Websites & Webshops',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    featured: true
+  },
+  {
+    id: 'ultherakliniek',
+    title: 'Medische Kliniek Website',
+    client: 'Ulthera Kliniek',
+    description: 'Een professionele website voor een medische kliniek gespecialiseerd in Ultherapy behandelingen.',
+    challenge: 'De kliniek wilde een betrouwbare website die hun medische expertise en behandelingen duidelijk communiceert aan potentiële patiënten.',
+    solution: 'We hebben een medisch professionele website ontwikkeld met duidelijke informatie over behandelingen, locaties en resultaten.',
+    result: 'Verhoogde vertrouwen bij patiënten en verbeterde online aanwezigheid in de medische sector.',
+    slug: 'ultherakliniek',
+    image: '/images/ultherakliniek.png',
+    category: 'Websites & Webshops',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    featured: true
+  },
+  {
     id: 'leadgeneratie-campagne',
     title: 'Leadgeneratie Campagne',
     client: 'B2B Software Bedrijf',
