@@ -46,10 +46,10 @@ const ServicesGrid = () => {
               <div className="flex justify-center pt-4">
                 <Link 
                   href="/contact" 
-                  className="inline-flex items-center px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold rounded-lg transition-all duration-300"
+                  className="glare-button inline-flex items-center px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold rounded-lg transition-all duration-300 relative overflow-hidden"
                 >
-                  Project starten
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <span className="relative z-10">Project starten</span>
+                  <ArrowRight className="ml-2 h-4 w-4 relative z-10" />
                 </Link>
               </div>
             </div>
