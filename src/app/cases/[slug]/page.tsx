@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowLeft, ExternalLink, Calendar, User, Tag } from 'lucide-react'
 import { cases } from '@/data/cases'
 
@@ -84,14 +85,15 @@ export default function CasePage({ params }: CasePageProps) {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-primary-500 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <ExternalLink className="h-10 w-10 text-white" />
-                  </div>
-                  <p className="text-primary-600 font-medium">Case Preview</p>
-                  <p className="text-primary-500 text-sm mt-2">Mockup afbeelding</p>
-                </div>
+              <div className="relative rounded-xl overflow-hidden h-96">
+                <Image
+                  src={caseItem.image}
+                  alt={`${caseItem.client} Website Screenshot`}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors duration-300"></div>
               </div>
             </div>
           </div>
@@ -146,19 +148,22 @@ export default function CasePage({ params }: CasePageProps) {
               {[1, 2, 3].map((i) => (
                 <div
                   key={i}
-                  className="bg-white rounded-xl p-8 shadow-sm"
+                  className="bg-white rounded-xl overflow-hidden shadow-sm"
                 >
-                  <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg h-48 flex items-center justify-center mb-4">
-                    <div className="text-center">
-                      <div className="w-12 h-12 bg-gray-300 rounded-lg flex items-center justify-center mx-auto mb-2">
-                        <ExternalLink className="h-6 w-6 text-gray-500" />
-                      </div>
-                      <p className="text-gray-500 text-sm">Screenshot {i}</p>
-                    </div>
+                  <div className="relative h-48">
+                    <Image
+                      src={caseItem.image}
+                      alt={`${caseItem.client} Website Screenshot ${i}`}
+                      fill
+                      className="object-cover"
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                    />
                   </div>
-                  <p className="text-sm text-gray-600">
-                    Project screenshot placeholder {i}
-                  </p>
+                  <div className="p-4">
+                    <p className="text-sm text-gray-600">
+                      {caseItem.client} website screenshot {i}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

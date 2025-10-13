@@ -51,7 +51,7 @@ export const cases: Case[] = [
     solution: 'We hebben een responsive website ontwikkeld met duidelijke secties voor werkgevers en kandidaten, moderne animaties en een gebruiksvriendelijke interface.',
     result: 'Verbeterde gebruikerservaring en duidelijke communicatie van hun talentgedreven aanpak.',
     slug: 'quikr-talent',
-    image: '/images/quikr-talent.png',
+    image: '/images/Quikr.png',
     category: 'Websites & Webshops',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     featured: true
@@ -65,7 +65,7 @@ export const cases: Case[] = [
     solution: 'We hebben een medisch professionele website ontwikkeld met duidelijke informatie over behandelingen, locaties en resultaten.',
     result: 'Verhoogde vertrouwen bij patiënten en verbeterde online aanwezigheid in de medische sector.',
     slug: 'ultherakliniek',
-    image: '/images/ultherakliniek.png',
+    image: '/images/Ultherakliniek.png',
     category: 'Websites & Webshops',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     featured: true
