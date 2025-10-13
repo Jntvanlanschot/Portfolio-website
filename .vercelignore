@@ -1,0 +1,2 @@
+# Ignore large animation files that cause build issues
+public/animations/**/*.json

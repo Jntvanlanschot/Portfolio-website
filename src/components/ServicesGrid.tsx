@@ -58,7 +58,7 @@ const ServicesGrid = () => {
             <div className="flex justify-center lg:justify-end">
               <div className="w-48 md:w-56 lg:w-64 h-48 md:h-56 lg:h-64">
                 <DotLottieReact
-                  src="/images/Online op maat/manifest.json"
+                  src="/animations/Online op maat/manifest.json"
                   loop
                   autoplay
                   className="w-full h-full"
