@@ -136,40 +136,6 @@ export default function CasePage({ params }: CasePageProps) {
         </div>
       </section>
 
-      {/* Screenshots Section */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-              Project Screenshots
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="bg-white rounded-xl overflow-hidden shadow-sm"
-                >
-                  <div className="relative h-48">
-                    <Image
-                      src={caseItem.image}
-                      alt={`${caseItem.client} Website Screenshot ${i}`}
-                      fill
-                      className="object-cover"
-                      sizes="(min-width: 768px) 33vw, 100vw"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <p className="text-sm text-gray-600">
-                      {caseItem.client} website screenshot {i}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="section-padding bg-white">
