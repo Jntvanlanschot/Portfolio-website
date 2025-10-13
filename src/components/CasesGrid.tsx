@@ -69,7 +69,7 @@ const CasesGrid = () => {
                       // Quikr Talent website screenshot
                       <div className="w-full h-full relative">
                         <Image 
-                          src="/images/quikr-talent.png" 
+                          src="/images/Quikr.png" 
                           alt="Quikr Talent Website Screenshot"
                           fill
                           className="object-cover"
@@ -81,7 +81,7 @@ const CasesGrid = () => {
                       // Ulthera Kliniek website screenshot
                       <div className="w-full h-full relative">
                         <Image 
-                          src="/images/ultherakliniek.png" 
+                          src="/images/Ultherakliniek.png" 
                           alt="Ulthera Kliniek Website Screenshot"
                           fill
                           className="object-cover"
