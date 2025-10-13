@@ -1,11 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { services } from '@/data/services'
 import ServiceIcon from './ServiceIcon'
-import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 
 const iconMap = {
   'websites-webshops': 'website',
@@ -54,16 +54,16 @@ const ServicesGrid = () => {
               </div>
             </div>
 
-            {/* Right side - Animation */}
+            {/* Right side - Pictogram */}
             <div className="flex justify-center lg:justify-end">
-              <div className="w-48 md:w-56 lg:w-64 h-48 md:h-56 lg:h-64">
-                <DotLottieReact
-                  src="/animations/Online op maat/manifest.json"
-                  loop
-                  autoplay
-                  className="w-full h-full"
-                />
-              </div>
+              <Image
+                src="/images/website-pictogram.svg"
+                alt="Website pictogram"
+                width={200}
+                height={155}
+                className="w-auto h-48 md:h-56 lg:h-64"
+                priority
+              />
             </div>
           </div>
         </motion.div>
