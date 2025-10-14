@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import { services } from '@/data/services'
 import ServiceIcon from './ServiceIcon'
+import SplitText from './SplitText'
+import Beams from './Beams'
 
 const iconMap = {
   'websites-webshops': 'website',
@@ -16,8 +18,20 @@ const iconMap = {
 
 const ServicesGrid = () => {
   return (
-    <section id="diensten" className="py-12 md:py-16 bg-gray-800">
-      <div className="container-custom">
+    <section id="diensten" className="py-12 md:py-16 bg-black relative">
+      <Beams 
+        intensity={0.4}
+        speed={15}
+        color="#6c63ff"
+        opacity={0.6}
+        numBeams={16}
+        beamWidth={3}
+        beamHeight={250}
+        animation="pulse"
+        trigger="onMount"
+        className="absolute inset-0"
+      />
+      <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,8 +43,29 @@ const ServicesGrid = () => {
             {/* Left side - Title and content */}
             <div className="lg:col-span-2 space-y-6">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight">
-                Complete website<br />
-                <span className="text-gray-300">oplossingen</span>
+                <SplitText 
+                  className="text-white" 
+                  direction="up" 
+                  trigger="onScroll"
+                  stagger={0.02}
+                  duration={0.6}
+                  easing="ease-out"
+                  splitBy="char"
+                >
+                  Complete website
+                </SplitText><br />
+                <SplitText 
+                  className="text-gray-300" 
+                  direction="up" 
+                  trigger="onScroll"
+                  delay={0.3}
+                  stagger={0.02}
+                  duration={0.6}
+                  easing="ease-out"
+                  splitBy="char"
+                >
+                  oplossingen
+                </SplitText>
               </h2>
               
               <p className="text-lg md:text-xl text-gray-300 leading-relaxed">

@@ -11,6 +11,7 @@ export interface Case {
   category: string
   technologies: string[]
   featured: boolean
+  websiteUrl?: string
 }
 
 export const cases: Case[] = [
@@ -26,7 +27,8 @@ export const cases: Case[] = [
     image: '/images/screenshot-silty-pleasure.png',
     category: 'Websites & Webshops',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    featured: true
+    featured: true,
+    websiteUrl: 'https://www.siltypleasure.nl/'
   },
   {
     id: 'reisbureau',
@@ -40,7 +42,8 @@ export const cases: Case[] = [
     image: '/images/house-of-momma.png',
     category: 'Websites & Webshops',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    featured: true
+    featured: true,
+    websiteUrl: 'https://houseofmomma.com/'
   },
   {
     id: 'quikr-talent',
@@ -54,7 +57,8 @@ export const cases: Case[] = [
     image: '/images/Quikr.png',
     category: 'Websites & Webshops',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    featured: true
+    featured: true,
+    websiteUrl: 'https://quikr.nl/'
   },
   {
     id: 'ultherakliniek',
@@ -68,7 +72,8 @@ export const cases: Case[] = [
     image: '/images/Ultherakliniek.png',
     category: 'Websites & Webshops',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    featured: true
+    featured: true,
+    websiteUrl: 'https://ultherakliniek.nl/'
   },
   {
     id: 'leadgeneratie-campagne',

@@ -73,7 +73,7 @@ export default function CasePage({ params }: CasePageProps) {
                   {caseItem.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {caseItem.technologies.map((tech, index) => (
                     <span
                       key={index}
@@ -83,6 +83,30 @@ export default function CasePage({ params }: CasePageProps) {
                     </span>
                   ))}
                 </div>
+
+                {caseItem.websiteUrl && (
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                          Website
+                        </h3>
+                        <p className="text-gray-600 text-sm">
+                          {caseItem.client}
+                        </p>
+                      </div>
+                      <a
+                        href={caseItem.websiteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-4 py-2 bg-[#6c63ff] text-white rounded-lg hover:bg-[#5a52e6] transition-colors"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Bezoek Website
+                      </a>
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className="relative rounded-xl overflow-hidden h-96">

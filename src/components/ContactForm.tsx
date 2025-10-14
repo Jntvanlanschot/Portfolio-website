@@ -75,7 +75,7 @@ const ContactForm = () => {
   }
 
   return (
-    <section id="contact" className="section-padding bg-white">
+    <section id="contact" className="section-padding bg-gray-800">
       <div className="container-custom">
         <div className="max-w-2xl mx-auto">
           <motion.div
@@ -85,10 +85,10 @@ const ContactForm = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Neem contact op
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Laten we samen kijken hoe we jouw bedrijf kunnen helpen groeien
             </p>
           </motion.div>
